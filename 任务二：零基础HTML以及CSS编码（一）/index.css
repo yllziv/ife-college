@@ -1,0 +1,192 @@
+/* 导航栏 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+header {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  line-height: 55px;
+}
+
+header h1 {
+  margin-left: 10px;
+  display: inline;
+}
+
+.header-nav {
+  display: inline;
+  float: right;
+}
+
+.header-nav li {
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+}
+
+.header-nav li:hover {
+  background-color: #6e7a88;
+  cursor: pointer;
+}
+
+.header-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+article {
+  border: 20px solid #dedede;
+  padding: 20px;
+}
+
+article h2 {
+  margin: 15px 0;
+}
+
+article h3 {
+  margin: 8px 0;
+  color: #6e6a66;
+}
+
+.author,
+.publish-time {
+  color: #7f7f7f;
+  margin: 8px 5px;
+}
+
+.author {
+  margin-left: 0;
+}
+
+section p {
+  margin: 10px 0;
+  line-height: 20px;
+  text-indent: 2em;
+}
+
+section p:first-child {
+  text-indent: 0;
+}
+
+article ul,
+article ol {
+  margin: 20px;
+}
+
+article ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+article ol li {
+  margin: 10px 0;
+}
+
+.img-list li {
+  width: 220px;
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.my-table {
+  min-width: 600px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.my-table tr {
+  line-height: 30px;
+}
+
+.my-table thead {
+  background-color: #333333;
+  color: #fff;
+}
+
+.my-table tr:nth-child(1) {
+  width: 40%;
+}
+
+.my-table tr:nth-child(2) {
+  width: 40%;
+}
+
+.my-table tr:nth-child(3) {
+  width: 20%;
+}
+
+.my-table tfoot {
+  background-color: #cccccc;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar form {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.sidebar form .one-part {
+  margin: 15px 0;
+}
+
+.sidebar form input {
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 3px;
+  margin-bottom: 1px;
+}
+
+.sidebar form textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.sidebar form label {
+  display: inline-block;
+  width: 130px;
+  text-align: right
+}
+
+.sidebar form input[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  background-color: #3355d0;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.sidebar form input[type="submit"]:hover {
+  background-color: #335572;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  text-align: center;
+}
+
+footer p {
+  line-height: 80px;
+  color: #fff;
+}
