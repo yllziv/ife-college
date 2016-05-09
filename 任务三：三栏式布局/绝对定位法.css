@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  line-height: 80px;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  height: 100%;
+  left: 150px;
+  right: 100px;
+  background-color: #ccc;
+}
+
+.left {
+  float: left;
+  height: 100%;
+  width: 150px;
+  background-color: blue;
+}
+
+.right {
+  float: right;
+  height: 100%;
+  width: 100px;
+  background-color: blue;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  clear: both;
+}
+
+
+/*
+绝对定位法：
+使中间内容center绝对定位，脱离文档流，从而使左右两边自动浮上去。
+*/

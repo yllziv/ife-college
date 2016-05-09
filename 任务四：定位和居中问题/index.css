@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  top: 50%;
+  width: 400px;
+  height: 200px;
+  background-color: #cccccc;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+.circle {
+  width: 0;
+  height: 0;
+  border: 50px solid #fc0;
+  border-radius: 50px;
+}
+
+.top-left {
+  position: relative;
+  top: -50px;
+  left: -50px;
+  border-color: transparent #fc0 transparent transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bottom-right {
+  position: relative;
+  left: 350px;
+  top: 50px;
+  border-color: transparent #fc0 transparent transparent;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}

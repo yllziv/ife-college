@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  line-height: 80px;
+}
+
+.content {
+  height: 100%;
+  background-color: #ccc;
+  padding-left: 150px;
+  padding-right: 100px;
+  overflow: hidden;
+}
+
+.center,
+.left,
+.right {
+  position: relative;
+  float: left;
+  height: 100%;
+}
+
+.center {
+  width: 100%;
+  background-color: #ccc;
+}
+
+.left {
+  width: 150px;
+  margin-left: -100%;
+  right: 150px;
+  /* 相对定位，right值是距离原来右边多少像素 */
+  background-color: blue;
+}
+
+.right {
+  width: 100px;
+  margin-right: -100px;
+  background-color: blue;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  clear: both;
+}
+
+
+/*
+
+注意：
+1. 中间三者都 float:left , 再加上一个position:relative
+2. 中间部分 width:100%占满
+3. 此时中间占满了，所以要把left拉到最左边，使用margin-left:-100%
+4. 这时left拉回来了，但会覆盖中间内容的左端，要把中间内容拉出来，所以在外围container加上 padding:0 220px 0 200px
+5. 中间内容拉回来了，但left也跟着过来了，所以要还原，就对left使用相对定位 left:-200px  同理，right也要相对定位还原 right:-220px
+6. 为什么content元素不能加width:100%; 因为盒模型总宽度＝width＋padding＋margin＋border，加上之后会超出。
+7. center元素要放在left和right前面。
+*/
