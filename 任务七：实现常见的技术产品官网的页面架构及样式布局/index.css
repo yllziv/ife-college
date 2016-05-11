@@ -709,6 +709,74 @@ li.input-list:last-child:hover{
   cursor: pointer;
 }
 
+.connect{
+  width: 100%;
+  height: 355px;
+  background-color: #33363f;
+  text-align: center;
+  color: #fff;
+}
+
+.connect h2{
+  font-size: 25px;
+  padding-top: 85px;
+  padding-bottom: 5px;
+}
+
+.connect p{
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.submit-email{
+  height: 40px;
+  width: 510px;
+  margin: 0 auto;
+}
+
+.input-email{
+  margin-top: 30px;
+  display: inline-block;
+  width: 425px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.input-email input{
+  border: none;
+  outline: none;
+  margin-top: 12px;
+  width: 405px;
+  margin-left: 10px;
+}
+
+.submit-email .submit-btn{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  top: 2px;
+  left: -4px;
+  width: 80px;
+  height: 40px;
+  background-color: #717179;
+  letter-spacing: 10px;
+  line-height: 40px;
+}
+
+.connect ul{
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.connect li{
+  float: left;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 footer{
   width: 100%;
   height: 55px;
@@ -720,6 +788,7 @@ footer{
 footer .left{
   float: left;
   padding-left: 90px;
+  color: #fff;
 }
 
 footer .right{
