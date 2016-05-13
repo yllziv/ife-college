@@ -1,0 +1,32 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header,footer{
+    flex: 0 0 100px;
+    background-color: green;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+}
+
+.left, .right{
+    flex: 0 0 80px;
+    background-color: blue;
+}
+
+.left{
+    order: -1;
+}
+
+.center{
+    flex: 1;
+}

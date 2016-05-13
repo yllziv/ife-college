@@ -1,0 +1,56 @@
+.div1{
+    height: 120px;
+}
+
+.div2{
+    height: 100px;
+}
+
+.div3{
+    height: 40px;
+}
+
+.div4{
+    height: 220px;
+}
+
+div{
+    margin: 20px;
+    width: 150px;
+    border: 1px solid #000;
+}
+
+
+@media (min-width: 640px){
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 640px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    /*order数字越小越靠前*/
+    .div1{
+        order: 2;
+    }
+    .div2{
+        order: 3;
+    }
+    .div3{
+        order: 4;
+    }
+    .div4{
+        order: 1;
+    }
+}
+
