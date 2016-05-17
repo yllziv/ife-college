@@ -27,16 +27,18 @@
     <section class="sidebar">
       <div class="user-info">
         <div class="top">
-          <div class="user-logo"></div>
-          <div>DQT</div>
+          <div class="user-logo">
+            <div class="inner-logo"></div>
+          </div>
+          <div class="user-name">ABC123</div>
         </div>
         <div class="bottom">
           <div class="info">
-            <p>110></p>
+            <p>110</p>
             <p>收藏</p>
           </div>
           <div class="info">
-            <p>313></p>
+            <p>313</p>
             <p>粉丝</p>
           </div>
         </div>
@@ -52,17 +54,26 @@
                 <span class="jt"></span>
                 <span class="file-logo"></span>
                 <span class="file-name">文件夹一</span>
+              </li>
+              <li class="file">
+                <span class="jt jt-1"></span>
+                <span class="file-logo"></span>
+                <span class="file-name">文件夹二</span>
                 <ul>
                   <li class="filelist">
                     <span class="flielist-logo"></span>
-                    <span class="flielist-name">文档</span>
+                    <span class="flielist-name">文档1</span>
+                  </li>
+                  <li class="filelist">
+                    <span class="flielist-logo"></span>
+                    <span class="flielist-name">文档2</span>
                   </li>
                 </ul>
               </li>
               <li class="file">
                 <span class="jt"></span>
                 <span class="file-logo"></span>
-                <span class="file-name">文件夹二</span>
+                <span class="file-name">文件夹三</span>
               </li>
             </ul>
           </div>
@@ -95,7 +106,7 @@
         <span>C站</span><span>／</span>
         <span>个人报表</span><span>／</span>
         <span>文件一</span><span>／</span>
-        <span>文档一</span>
+        <span class="current-span">文档一</span>
       </div>
 
       <div class="article-content">
@@ -103,7 +114,7 @@
 
           <div class="search-option">
             <div class="input">
-              <span>查询项</span>
+              <span class="option-name">查询项</span>
               <div class="option">
                 <span>第一项</span>
                 <span class="jt"></span>
@@ -130,9 +141,7 @@
             </div>
 
             <div class="right">
-              <div class="top"></div>
-              <p>换</p>
-              <div class="bottom"></div>
+              换
             </div>
 
           </div>
@@ -204,7 +213,6 @@
           </div>
           <div class="right-jt"></div>
           <div class="history">
-            <span class="history-logo"></span>
             <span>历史查询</span>
           </div>
         </section>
@@ -244,22 +252,23 @@
             </li>
           </ul>
         </section>
+
         <section class="panel first-group">
           <p class="title">第一组项目</p>
           <div class="content">
             <div class="project-title">
               <ul>
-                <li>项目一</li>
-                <li>项目二</li>
-                <li>项目三</li>
-                <li>项目四</li>
-                <li>项目五</li>
+                <li><a href="#p1">项目一</a></li>
+                <li><a href="#p2">项目二</a></li>
+                <li><a href="#p3">项目三</a></li>
+                <li><a href="#p4">项目四</a></li>
+                <li><a href="#p5">项目五</a></li>
               </ul>
             </div>
 
             <div class="project-content">
               <ul>
-                <li>
+                <li id="p1">
                   <table>
                     <tbody>
                       <tr><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td><td>购买材料一</td></tr>
@@ -272,7 +281,7 @@
                   </table>
                 </li>
 
-                <li>
+                <li id="p2">
                   <table>
                     <tbody>
                       <tr><td>购买材料二</td><td>购买材料二</td><td>购买材料二</td><td>购买材料二</td></tr>
@@ -285,7 +294,7 @@
                   </table>
                 </li>
 
-                <li>
+                <li id="p3">
                   <table>
                     <tbody>
                       <tr><td>购买材料三</td><td>购买材料三</td><td>购买材料三</td><td>购买材料三</td></tr>
@@ -298,7 +307,7 @@
                   </table>
                 </li>
 
-                <li>
+                <li id="p4">
                   <table>
                     <tbody>
                       <tr><td>购买材料四</td><td>购买材料四</td><td>购买材料四</td><td>购买材料四</td></tr>
@@ -311,7 +320,7 @@
                   </table>
                 </li>
 
-                <li>
+                <li id="p5">
                   <table>
                     <tbody>
                       <tr><td>购买材料五</td><td>购买材料五</td><td>购买材料五</td><td>购买材料五</td></tr>
@@ -330,20 +339,21 @@
         <section class="panel second-group">
           <p class="title">第二组项目</p>
           <div class="content">
-            <table>
-              <tboy>
-                <tr>
-                  <td><h5>标题</h5><p>项目报表三</p></td>
-                </tr>
-                <tr>
-                  <td><h5>价格</h5><p>¥ 128</p></td>
-                  <td><h5>负责任</h5><p>小A</p></td>
-                </tr>
-                <tr>
-                  <td><h5>详细描述</h5><p>该项目目前负责人是......</p></td>
-                </tr>
-              </tboy>
-            </table>
+            <div class="project-title">
+              <h5>标题</h5>
+              <p>项目报表三</p>
+            </div>
+            <div class="project-charge">
+              <div class="left">
+                <h5>价格</h5><p>¥ 128</p>
+              </div>
+              <div class="right">
+                <h5>负责任</h5><p>小A</p>
+              </div>
+            </div>
+            <div class="project-desc">
+              <h5>详细描述</h5><p>该项目目前负责人是......</p>
+            </div>
 
             <div class="search-checkbox">
               <input type="checkbox" id="agree"/>
@@ -361,7 +371,6 @@
                   <span>2016年</span>
                 </div>
                 <div class="right">
-                  <span class="tj"></span>
                 </div>
               </li>
 
@@ -370,7 +379,6 @@
                   <span>4月</span>
                 </div>
                 <div class="right">
-                  <span class="tj"></span>
                 </div>
               </li>
 
@@ -379,7 +387,6 @@
                   <span>标注日期</span>
                 </div>
                 <div class="right">
-                  <span class="tj"></span>
                 </div>
               </li>
 
@@ -388,18 +395,22 @@
               </li>
             </ul>
 
-            <div class="week">
-              <span>一</span>
-              <span>二</span>
-              <span>三</span>
-              <span>四</span>
-              <span>五</span>
-              <span>六</span>
-              <span>日</span>
-            </div>
+            <ul class="week">
+              <li>一</li>
+              <li>二</li>
+              <li>三</li>
+              <li>四</li>
+              <li>五</li>
+              <li>六</li>
+              <li>日</li>
+            </ul>
 
             <div class="date-list">
               <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li><h5>1</h5><p class="important">愚人节</p></li>
                 <li><h5>2</h5><p>廿五</p></li>
                 <li><h5>3</h5><p>廿六</p></li>
@@ -408,17 +419,17 @@
                 <li><h5>6</h5><p>廿九</p></li>
                 <li><h5>7</h5><p>三月</p></li>
                 <li><h5>8</h5><p>初二</p></li>
-                <li><h5>9</h5><p>初三</p></li>
+                <li class="clicked"><h5>9</h5><p>初三</p></li>
                 <li><h5>10</h5><p>初四</p></li>
                 <li><h5>11</h5><p>初五</p></li>
-                <li><h5>12</h5><p>初六</p></li>
+                <li class="clicked"><h5>12</h5><p>初六</p></li>
                 <li><h5>13</h5><p>初七</p></li>
                 <li><h5>14</h5><p>初八</p></li>
                 <li><h5>15</h5><p>初九</p></li>
                 <li><h5>16</h5><p>初十</p></li>
                 <li><h5>17</h5><p>十一</p></li>
                 <li><h5>18</h5><p>十二</p></li>
-                <li><h5>19</h5><p>十三</p></li>
+                <li class="clicked"><h5>19</h5><p>十三</p></li>
                 <li><h5>20</h5><p>十四</p></li>
                 <li><h5>21</h5><p>十五</p></li>
                 <li><h5>22</h5><p>十六</p></li>
